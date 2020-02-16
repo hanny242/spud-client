@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import { API } from '../Api';
 
 class LoginForm extends Component {
     constructor() {
@@ -25,7 +25,7 @@ class LoginForm extends Component {
         event.preventDefault()
         // console.log('handleSubmit')
 
-        axios
+        API
             .post('/user/login', {
                 username: this.state.username,
                 password: this.state.password

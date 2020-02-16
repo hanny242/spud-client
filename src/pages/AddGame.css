@@ -1,0 +1,21 @@
+
+  .form {
+      width: 20vw;
+      justify-self: center;
+      margin: 10rem;
+  }
+
+  .card {
+      /* width: 18rem;
+      height: 20rem; */
+      display: flex;
+      flex-wrap: wrap;
+    width: 25%;
+  }
+
+  .card-deck {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

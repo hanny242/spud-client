@@ -1,0 +1,42 @@
+.jumbotron {
+    background-image: url("../images/jeux-video-pc-pas-cher.jpg");
+    background-size: cover;
+    height: 70vh;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    margin-top: 3rem;
+    padding-top: -5rem;
+    border-radius: none !important;
+}
+
+h1 {
+    width: 50vw;
+    margin: 5rem;
+    color: lightgray;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.myButton {
+	box-shadow:inset 0px 34px 0px -15px navy;
+	background-color: navy;
+	border:none;
+    display:inline-block;
+    box-shadow: blue;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto Mono', monospace;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px blue;
+    margin: 5rem;
+    width: 10rem;
+    height: 4rem;
+}
+.myButton:hover {
+	background-color: rgb(2, 2, 85);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

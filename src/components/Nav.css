@@ -1,0 +1,13 @@
+.navbar {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+a {
+    font-family: 'Roboto Mono', monospace;
+    padding: 2rem;  
+}
+
+.brand {
+    font-family: 'Amatic SC', cursive !important;
+}

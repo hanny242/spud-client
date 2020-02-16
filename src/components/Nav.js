@@ -1,31 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Potato from '../images/cutepotato.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import Potato from "../images/cutepotato.png";
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav';
+import './Nav.css';
 
-export default class Nav extends React.Component {
-  render() {    
+
+export default class NavBar extends React.Component {
+  render() {
     return (
-      <nav className="Nav">
-        <div className="Nav__container">
-          <Link to="/" className="Nav__brand">
-            <h1>SPUD</h1>
-          </Link>
-
-          <div className="Nav__right">
-            <ul className="Nav__item-wrapper">
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/">Home</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/signup">Signup</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/login">Login</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" fixed="top">
+        <Navbar.Brand className='brand' href="/">SPUD</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/game-collection">Game Collection</Nav.Link>
+            <Nav.Link href="/friends">Friends</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/signup">Signup</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

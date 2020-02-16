@@ -1,27 +1,6 @@
-// import React, { Component } from 'react';
-// import axios from "Axios";
-
-// export class Signup extends Component {
-
-//     handleSignupClick(){
-//         axios({
-//             url: `${process.env.REACT_APP_API}/Signup`
-//         })
-//     }
-//     render() {
-//         return (
-//             <div>
-                
-//             </div>
-//         );
-//     }
-// }
-
-// export default Signup;
-
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
-import API from '../Api';
+import { API } from '../Api';
 import './Signup.css';
 
 class Signup extends Component {
@@ -40,6 +19,12 @@ class Signup extends Component {
 	handleChange(event) {
 		this.setState({
 			[event.target.name]: event.target.value
+		})
+	}
+
+	handleSteamSubmit(event) {
+		API.post(`/login`, {
+			
 		})
 	}
 
