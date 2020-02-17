@@ -24,7 +24,7 @@ class LoginForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     // console.log('handleSubmit')
-
+    let currentComponent = this;
     API.post("/login", {
       username: this.state.username,
       password: this.state.password
@@ -34,7 +34,7 @@ class LoginForm extends Component {
         console.log(response);
         if (response.status === 200) {
           // update App.js state
-          this.setState({
+          currentComponent.setState({
             loggedIn: true,
             username: response.data.username
           });
@@ -71,7 +71,7 @@ class LoginForm extends Component {
                   id="username"
                   name="username"
                   placeholder="Username"
-                  value={this.state.username}
+                  value={this.state.username || ""}
                   onChange={this.handleChange}
                 />
               </div>

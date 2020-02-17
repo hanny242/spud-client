@@ -1,12 +1,5 @@
 body {
-  background: linear-gradient(132deg, #d6d6d6, #5f5e5e);
+  background-color: slategray !important;
   background-size: 400% 400%;
-  animation: BackgroundGradient 500s ease infinite;
   height: 100vh
-}
-
-@keyframes BackgroundGradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { API } from '../Api';
 import './Signup.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Signup extends Component {
 	constructor() {

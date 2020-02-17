@@ -40,7 +40,6 @@ export class AddGame extends Component {
         }
       })
       .then(function(response) {
-        debugger;
         currentComponent.setState({ gameslist: response.data.results });
         console.log(response);
       })
@@ -54,13 +53,13 @@ export class AddGame extends Component {
       <div className="addGame">
         <div className="form">
           <Form>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group controlId="addGameForm">
               <Form.Label>Game Name</Form.Label>
               <Form.Control
                 as="input"
                 type="text"
                 value={this.state.searchinput}
-                placeholder="Enter email"
+                placeholder="Search Game"
                 onChange={this.handleChange}
               />
             </Form.Group>
